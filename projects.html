@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Browse Apex Construction Co.'s portfolio of commercial and industrial projects across Ohio, Indiana, and Kentucky.">
-    <title>Projects | Apex Construction Co.</title>
+        content="Project portfolio from Apex Infrastructure Group. Commercial and industrial construction projects across Ohio, Indiana, and Kentucky.">
+    <title>Projects | Apex Infrastructure Group</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -21,18 +21,18 @@
     <header class="header scrolled" role="banner">
         <div class="container">
             <div class="header-inner">
-                <a href="index.html" class="logo" aria-label="Apex Construction Home">
-                    <span class="logo-icon">A</span>
-                    <span>APEX</span>
-                </a>
+                <a href="index.html" class="logo">APEX INFRASTRUCTURE</a>
 
                 <nav class="nav" role="navigation" aria-label="Main navigation">
                     <a href="index.html" class="nav-link">Home</a>
                     <a href="about.html" class="nav-link">About</a>
                     <a href="services.html" class="nav-link">Services</a>
-                    <a href="projects.html" class="nav-link active">Projects</a>
-                    <a href="safety.html" class="nav-link">Safety & Quality</a>
+                    <a href="projects.html" class="nav-link">Projects</a>
+                    <a href="safety.html" class="nav-link">Safety</a>
                     <a href="contact.html" class="nav-link">Contact</a>
+                    <div class="nav-cta">
+                        <a href="contact.html" class="btn btn-primary">Request Consultation</a>
+                    </div>
                 </nav>
 
                 <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
@@ -48,182 +48,126 @@
         <!-- Page Hero -->
         <section class="page-hero">
             <div class="container">
-                <h1>Our Work Speaks for Itself</h1>
+                <h1>Project Portfolio</h1>
                 <p>200+ projects completed across Ohio, Indiana, and Kentucky since 2008.</p>
             </div>
         </section>
 
-        <!-- Projects -->
+        <!-- Filter & Projects -->
         <section class="section">
             <div class="container">
-                <!-- Filter Tabs -->
                 <div class="filter-tabs" role="tablist">
-                    <button class="filter-tab active" data-filter="all" role="tab">All</button>
+                    <button class="filter-tab active" data-filter="all" role="tab">All Projects</button>
                     <button class="filter-tab" data-filter="commercial" role="tab">Commercial</button>
                     <button class="filter-tab" data-filter="industrial" role="tab">Industrial</button>
                     <button class="filter-tab" data-filter="retail" role="tab">Retail</button>
                     <button class="filter-tab" data-filter="renovation" role="tab">Renovation</button>
                 </div>
 
-                <!-- Projects Grid -->
                 <div class="grid grid-3">
                     <article class="project-card" data-category="commercial">
-                        <div class="project-card-image"
-                            style="background: linear-gradient(135deg, #0F172A 0%, #334155 100%); display: flex; align-items: center; justify-content: center;">
-                            <span style="font-size: 4rem;">🏢</span>
-                        </div>
+                        <div class="project-card-image" style="background-color: var(--navy);"></div>
                         <div class="project-card-overlay">
-                            <div class="project-card-meta">
-                                <span class="project-card-tag">Commercial</span>
-                                <span class="project-card-tag">2024</span>
-                            </div>
+                            <span class="project-card-tag">Commercial</span>
                             <h3>Riverfront Office Complex</h3>
-                            <p>45,000 sq ft Class A office • Columbus, OH</p>
+                            <p>45,000 sq ft Class A Office — Columbus, OH</p>
                         </div>
                     </article>
 
                     <article class="project-card" data-category="industrial">
-                        <div class="project-card-image"
-                            style="background: linear-gradient(135deg, #1E293B 0%, #475569 100%); display: flex; align-items: center; justify-content: center;">
-                            <span style="font-size: 4rem;">🏭</span>
-                        </div>
+                        <div class="project-card-image" style="background-color: var(--navy-dark);"></div>
                         <div class="project-card-overlay">
-                            <div class="project-card-meta">
-                                <span class="project-card-tag">Industrial</span>
-                                <span class="project-card-tag">2023</span>
-                            </div>
+                            <span class="project-card-tag">Industrial</span>
                             <h3>Metro Distribution Center</h3>
-                            <p>120,000 sq ft warehouse • Indianapolis, IN</p>
+                            <p>120,000 sq ft Warehouse — Indianapolis, IN</p>
                         </div>
                     </article>
 
                     <article class="project-card" data-category="retail">
-                        <div class="project-card-image"
-                            style="background: linear-gradient(135deg, #0F172A 0%, #F59E0B 100%); display: flex; align-items: center; justify-content: center;">
-                            <span style="font-size: 4rem;">🛒</span>
-                        </div>
+                        <div class="project-card-image" style="background-color: var(--navy-light);"></div>
                         <div class="project-card-overlay">
-                            <div class="project-card-meta">
-                                <span class="project-card-tag">Retail</span>
-                                <span class="project-card-tag">2023</span>
-                            </div>
+                            <span class="project-card-tag">Retail</span>
                             <h3>Oakwood Shopping Center</h3>
-                            <p>65,000 sq ft retail complex • Cincinnati, OH</p>
+                            <p>65,000 sq ft Retail Complex — Cincinnati, OH</p>
                         </div>
                     </article>
 
                     <article class="project-card" data-category="industrial">
-                        <div class="project-card-image"
-                            style="background: linear-gradient(135deg, #334155 0%, #1E293B 100%); display: flex; align-items: center; justify-content: center;">
-                            <span style="font-size: 4rem;">📦</span>
-                        </div>
+                        <div class="project-card-image" style="background-color: var(--navy);"></div>
                         <div class="project-card-overlay">
-                            <div class="project-card-meta">
-                                <span class="project-card-tag">Industrial</span>
-                                <span class="project-card-tag">2023</span>
-                            </div>
+                            <span class="project-card-tag">Industrial</span>
                             <h3>Midwest Logistics Expansion</h3>
-                            <p>35,000 sq ft warehouse addition • Dayton, OH</p>
+                            <p>35,000 sq ft Warehouse Addition — Dayton, OH</p>
                         </div>
                     </article>
 
                     <article class="project-card" data-category="commercial">
-                        <div class="project-card-image"
-                            style="background: linear-gradient(135deg, #1E293B 0%, #334155 100%); display: flex; align-items: center; justify-content: center;">
-                            <span style="font-size: 4rem;">🏥</span>
-                        </div>
+                        <div class="project-card-image" style="background-color: var(--navy-dark);"></div>
                         <div class="project-card-overlay">
-                            <div class="project-card-meta">
-                                <span class="project-card-tag">Commercial</span>
-                                <span class="project-card-tag">2022</span>
-                            </div>
+                            <span class="project-card-tag">Commercial</span>
                             <h3>Westside Medical Center</h3>
-                            <p>28,000 sq ft medical office • Columbus, OH</p>
+                            <p>28,000 sq ft Medical Office — Columbus, OH</p>
                         </div>
                     </article>
 
                     <article class="project-card" data-category="renovation">
-                        <div class="project-card-image"
-                            style="background: linear-gradient(135deg, #475569 0%, #0F172A 100%); display: flex; align-items: center; justify-content: center;">
-                            <span style="font-size: 4rem;">🔧</span>
-                        </div>
+                        <div class="project-card-image" style="background-color: var(--navy-light);"></div>
                         <div class="project-card-overlay">
-                            <div class="project-card-meta">
-                                <span class="project-card-tag">Renovation</span>
-                                <span class="project-card-tag">2022</span>
-                            </div>
+                            <span class="project-card-tag">Renovation</span>
                             <h3>Historic Bank Building</h3>
-                            <p>12,000 sq ft renovation • Lexington, KY</p>
+                            <p>12,000 sq ft Renovation — Lexington, KY</p>
                         </div>
                     </article>
 
                     <article class="project-card" data-category="retail">
-                        <div class="project-card-image"
-                            style="background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%); display: flex; align-items: center; justify-content: center;">
-                            <span style="font-size: 4rem;">🍽️</span>
-                        </div>
+                        <div class="project-card-image" style="background-color: var(--navy);"></div>
                         <div class="project-card-overlay">
-                            <div class="project-card-meta">
-                                <span class="project-card-tag">Retail</span>
-                                <span class="project-card-tag">2022</span>
-                            </div>
+                            <span class="project-card-tag">Retail</span>
                             <h3>Brewery & Restaurant</h3>
-                            <p>8,500 sq ft food service • Columbus, OH</p>
+                            <p>8,500 sq ft Food Service — Columbus, OH</p>
                         </div>
                     </article>
 
                     <article class="project-card" data-category="industrial">
-                        <div class="project-card-image"
-                            style="background: linear-gradient(135deg, #1E293B 0%, #F59E0B 100%); display: flex; align-items: center; justify-content: center;">
-                            <span style="font-size: 4rem;">🔩</span>
-                        </div>
+                        <div class="project-card-image" style="background-color: var(--navy-dark);"></div>
                         <div class="project-card-overlay">
-                            <div class="project-card-meta">
-                                <span class="project-card-tag">Industrial</span>
-                                <span class="project-card-tag">2021</span>
-                            </div>
+                            <span class="project-card-tag">Industrial</span>
                             <h3>Precision Parts Facility</h3>
-                            <p>55,000 sq ft manufacturing • Fort Wayne, IN</p>
+                            <p>55,000 sq ft Manufacturing — Fort Wayne, IN</p>
                         </div>
                     </article>
 
                     <article class="project-card" data-category="commercial">
-                        <div class="project-card-image"
-                            style="background: linear-gradient(135deg, #334155 0%, #475569 100%); display: flex; align-items: center; justify-content: center;">
-                            <span style="font-size: 4rem;">🏦</span>
-                        </div>
+                        <div class="project-card-image" style="background-color: var(--navy-light);"></div>
                         <div class="project-card-overlay">
-                            <div class="project-card-meta">
-                                <span class="project-card-tag">Commercial</span>
-                                <span class="project-card-tag">2021</span>
-                            </div>
+                            <span class="project-card-tag">Commercial</span>
                             <h3>Community Credit Union</h3>
-                            <p>6,200 sq ft branch • Dublin, OH</p>
+                            <p>6,200 sq ft Branch — Dublin, OH</p>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- Stats -->
+        <!-- Metrics -->
         <section class="section section-dark">
             <div class="container">
-                <div class="metrics-grid">
-                    <div class="metric-card">
+                <div class="metrics" style="border-color: rgba(255,255,255,0.1);">
+                    <div class="metric">
                         <div class="metric-value">200+</div>
                         <div class="metric-label">Projects Completed</div>
                     </div>
-                    <div class="metric-card">
+                    <div class="metric">
                         <div class="metric-value">$85M</div>
-                        <div class="metric-label">Total Construction Value</div>
+                        <div class="metric-label">Total Contract Value</div>
                     </div>
-                    <div class="metric-card">
+                    <div class="metric">
                         <div class="metric-value">3</div>
                         <div class="metric-label">States Served</div>
                     </div>
-                    <div class="metric-card">
+                    <div class="metric">
                         <div class="metric-value">98%</div>
-                        <div class="metric-label">On-Time Completion</div>
+                        <div class="metric-label">On-Time Delivery</div>
                     </div>
                 </div>
             </div>
@@ -231,11 +175,16 @@
 
         <!-- CTA -->
         <section class="section">
-            <div class="container text-center">
-                <h2>Let's Add Your Project to This List</h2>
-                <p style="max-width: 500px; margin: var(--space-6) auto var(--space-8); color: var(--color-gray-600);">
-                    Tell us about your construction project and get a detailed estimate.</p>
-                <a href="contact.html" class="btn btn-primary btn-lg">Start Your Project</a>
+            <div class="container">
+                <div class="grid grid-2" style="gap: 4rem; align-items: center;">
+                    <div>
+                        <h2>Discuss Your Next Project</h2>
+                        <p style="margin-bottom: 0;">Contact us for a consultation and detailed project assessment.</p>
+                    </div>
+                    <div style="text-align: right;">
+                        <a href="contact.html" class="btn btn-primary btn-lg">Request Consultation</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -245,20 +194,22 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="index.html" class="logo">
-                        <span class="logo-icon">A</span>
-                        <span>APEX</span>
-                    </a>
-                    <p>Quality commercial and industrial construction in the Midwest since 2008.</p>
+                    <a href="index.html" class="logo">APEX INFRASTRUCTURE</a>
+                    <p>Commercial and industrial construction serving Ohio, Indiana, and Kentucky since 2008.</p>
+                    <div class="footer-certifications">
+                        <span>Licensed</span>
+                        <span>Bonded</span>
+                        <span>Insured</span>
+                    </div>
                 </div>
 
                 <div>
                     <h4>Company</h4>
                     <ul class="footer-links">
-                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="projects.html">Projects</a></li>
-                        <li><a href="safety.html">Safety & Quality</a></li>
+                        <li><a href="safety.html">Safety</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -266,26 +217,30 @@
                 <div>
                     <h4>Services</h4>
                     <ul class="footer-links">
-                        <li><a href="services.html#commercial">Commercial Buildings</a></li>
-                        <li><a href="services.html#industrial">Industrial Facilities</a></li>
+                        <li><a href="services.html#commercial">Commercial</a></li>
+                        <li><a href="services.html#industrial">Industrial</a></li>
                         <li><a href="services.html#renovations">Renovations</a></li>
-                        <li><a href="services.html#tenant">Tenant Improvements</a></li>
+                        <li><a href="services.html#tenant">Tenant Build-Outs</a></li>
                     </ul>
                 </div>
 
-                <div class="footer-contact">
+                <div>
                     <h4>Contact</h4>
-                    <p>1847 Industrial Parkway<br>Columbus, OH 43215</p>
-                    <p><a href="tel:+16145550120">(614) 555-0120</a></p>
-                    <p><a href="mailto:info@apexconstruction.com">info@apexconstruction.com</a></p>
+                    <ul class="footer-links">
+                        <li>1847 Industrial Parkway</li>
+                        <li>Columbus, OH 43215</li>
+                        <li><a href="tel:+16145550120">(614) 555-0120</a></li>
+                        <li><a href="mailto:info@apexinfra.com">info@apexinfra.com</a></li>
+                    </ul>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 Apex Construction Co. All rights reserved.</p>
+                <p>&copy; 2024 Apex Infrastructure Group. All rights reserved.</p>
                 <div class="footer-legal">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Service</a>
+                    <a href="#">ESG Commitment</a>
                 </div>
             </div>
         </div>
