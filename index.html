@@ -1,577 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="BuildPro Construction - Premier construction company delivering excellence in residential, commercial, and industrial projects. 25+ years of building dreams.">
-    <meta name="keywords" content="construction, building, contractor, residential, commercial, industrial, renovation">
-    <meta name="author" content="BuildPro Construction">
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#F97316">
-
-    <!-- Open Graph / Social Sharing -->
+    <meta name="description" content="Apex Infrastructure Group - A global leader in commercial, infrastructure, and industrial construction. Trusted by governments and Fortune 500 companies for 45+ years.">
+    <meta name="keywords" content="construction, infrastructure, commercial construction, industrial projects, design-build, project management">
+    <meta property="og:title" content="Apex Infrastructure Group | Building Tomorrow's Infrastructure">
+    <meta property="og:description" content="Trusted by governments and Fortune 500 companies for 45+ years. Commercial, infrastructure, and industrial construction.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://buildpro.com/">
-    <meta property="og:title" content="BuildPro Construction | Building Dreams, Delivering Excellence">
-    <meta property="og:description"
-        content="Premier construction company with 25+ years of excellence. Residential, commercial, and industrial projects delivered on time.">
-    <meta property="og:image" content="https://buildpro.com/assets/images/og-preview.jpg">
-    <meta property="og:site_name" content="BuildPro Construction">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="BuildPro Construction | Building Dreams, Delivering Excellence">
-    <meta name="twitter:description" content="Premier construction company with 25+ years of excellence.">
-    <meta name="twitter:image" content="https://buildpro.com/assets/images/og-preview.jpg">
-
-    <title>BuildPro Construction | Building Dreams, Delivering Excellence</title>
-    <link rel="canonical" href="https://buildpro.com/">
-
-    <!-- Preconnect for Performance -->
+    <title>Apex Infrastructure Group | Building Tomorrow's Infrastructure</title>
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-
-    <!-- Fonts & Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <!-- Header -->
-    <header class="header" id="header">
+    <header class="header" role="banner">
         <div class="container">
-            <a href="index.html" class="logo">
-                <div class="logo-icon">
-                    <i class="fas fa-hard-hat"></i>
-                </div>
-                <span class="logo-text">Build<span>Pro</span></span>
-            </a>
-
-            <nav class="nav">
-                <ul class="nav-links">
-                    <li><a href="index.html" class="nav-link active">Home</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="services.html" class="nav-link">Services</a></li>
-                    <li><a href="projects.html" class="nav-link">Projects</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
-                </ul>
-                <div class="nav-cta">
-                    <a href="contact.html" class="btn btn-primary">Get Quote</a>
-                </div>
-            </nav>
-
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div class="header-inner">
+                <a href="index.html" class="logo" aria-label="Apex Infrastructure Group Home">
+                    <span class="logo-icon">A</span>
+                    <span>APEX INFRASTRUCTURE</span>
+                </a>
+                
+                <nav class="nav" role="navigation" aria-label="Main navigation">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="projects.html" class="nav-link">Projects</a>
+                    <a href="safety.html" class="nav-link">Safety & ESG</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+                
+                <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </header>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu">
-        <button class="mobile-menu-close" id="mobileMenuClose">
-            <i class="fas fa-times"></i>
-        </button>
-        <ul class="mobile-nav-links">
-            <li><a href="index.html" class="mobile-nav-link active">Home</a></li>
-            <li><a href="about.html" class="mobile-nav-link">About</a></li>
-            <li><a href="services.html" class="mobile-nav-link">Services</a></li>
-            <li><a href="projects.html" class="mobile-nav-link">Projects</a></li>
-            <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
-        </ul>
-    </div>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-label">
-                    <i class="fas fa-hard-hat"></i>
-                    25+ Years of Excellence
-                </div>
-                <h1 class="hero-title">
-                    Building Dreams.<br>
-                    <span>Delivering Excellence.</span>
-                </h1>
-                <p class="hero-description">
-                    We transform visions into reality with precision craftsmanship, innovative solutions, and unwavering
-                    commitment to quality.
-                </p>
-                <div class="hero-buttons">
-                    <a href="projects.html" class="btn btn-primary">
-                        View Our Projects
-                    </a>
-                    <a href="contact.html" class="btn btn-outline">
-                        Get Free Quote
-                    </a>
-                </div>
-                <div class="hero-stats">
-                    <div class="hero-stat">
-                        <div class="hero-stat-number" data-count="500">500+</div>
-                        <div class="hero-stat-label">Projects Completed</div>
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg" aria-hidden="true"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-badge">Global Construction Leader</span>
+                    <h1>Building Tomorrow's Infrastructure. Today.</h1>
+                    <p class="hero-subtitle">Delivering critical infrastructure and world-class construction projects across 18 countries. Trusted by governments and Fortune 500 enterprises for over four decades.</p>
+                    
+                    <div class="hero-cta">
+                        <a href="contact.html" class="btn btn-primary btn-lg">Request a Consultation</a>
+                        <a href="projects.html" class="btn btn-secondary btn-lg">View Our Work</a>
                     </div>
-                    <div class="hero-stat">
-                        <div class="hero-stat-number" data-count="25">25+</div>
-                        <div class="hero-stat-label">Years Experience</div>
-                    </div>
-                    <div class="hero-stat">
-                        <div class="hero-stat-number" data-count="350">350+</div>
-                        <div class="hero-stat-label">Happy Clients</div>
+                    
+                    <div class="hero-trust">
+                        <p>Trusted by government agencies and Fortune 500 enterprises worldwide</p>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="hero-visual">
-                <div class="hero-image-wrapper">
-                    <div class="hero-image">
-                        <div class="hero-image-overlay"></div>
+        <!-- Metrics Section -->
+        <section class="section section-dark">
+            <div class="container">
+                <div class="metrics">
+                    <div class="metric">
+                        <div class="metric-value">45+</div>
+                        <div class="metric-label">Years of Excellence</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value">1,200+</div>
+                        <div class="metric-label">Projects Completed</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value">$6.4B+</div>
+                        <div class="metric-label">Annual Revenue</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value">18</div>
+                        <div class="metric-label">Countries</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value">12M+</div>
+                        <div class="metric-label">Safe Work Hours</div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Trust Bar - Horizontal, Structural -->
-    <section class="trust-bar">
-        <div class="container">
-            <div class="trust-bar-grid">
-                <div class="trust-item">
-                    <i class="fas fa-shield-alt"></i>
-                    <div class="trust-item-content">
-                        <strong>Quality Assured</strong>
-                        <span>ISO 9001 Certified</span>
+        <!-- Services Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header centered">
+                    <span class="eyebrow">What We Do</span>
+                    <h2>End-to-End Construction Solutions</h2>
+                    <p>From concept to completion, we deliver projects of extraordinary scale and complexity.</p>
+                </div>
+                
+                <div class="grid grid-4">
+                    <div class="card">
+                        <div class="card-icon">🏢</div>
+                        <h3>Commercial Construction</h3>
+                        <p>World-class office buildings, retail centers, healthcare facilities, and mixed-use developments.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">🌉</div>
+                        <h3>Infrastructure & Civil</h3>
+                        <p>Highways, bridges, airports, ports, and transit systems that connect communities.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">🏭</div>
+                        <h3>Industrial Projects</h3>
+                        <p>Manufacturing plants, refineries, data centers, and power generation facilities.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">📐</div>
+                        <h3>Design-Build</h3>
+                        <p>Integrated project delivery with single-source responsibility for faster, more efficient outcomes.</p>
                     </div>
                 </div>
-                <div class="trust-item">
-                    <i class="fas fa-clock"></i>
-                    <div class="trust-item-content">
-                        <strong>On-Time Delivery</strong>
-                        <span>98% Success Rate</span>
-                    </div>
-                </div>
-                <div class="trust-item">
-                    <i class="fas fa-users"></i>
-                    <div class="trust-item-content">
-                        <strong>Expert Team</strong>
-                        <span>120+ Professionals</span>
-                    </div>
-                </div>
-                <div class="trust-item">
-                    <i class="fas fa-award"></i>
-                    <div class="trust-item-content">
-                        <strong>Award Winning</strong>
-                        <span>45+ Industry Awards</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="section section-light" id="services">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">What We Do</span>
-                <h2 class="section-title">Our Construction Services</h2>
-                <p class="section-subtitle">Comprehensive construction solutions tailored to meet your unique needs and
-                    exceed your expectations.</p>
-            </div>
-
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-home"></i>
-                    </div>
-                    <h3>Residential Construction</h3>
-                    <p>Custom homes and residential developments built with precision, quality materials, and attention
-                        to every detail.</p>
-                    <a href="services.html" class="service-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <h3>Commercial Projects</h3>
-                    <p>Office buildings, retail spaces, and commercial complexes designed for functionality and
-                        aesthetic appeal.</p>
-                    <a href="services.html" class="service-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-industry"></i>
-                    </div>
-                    <h3>Industrial Facilities</h3>
-                    <p>Warehouses, manufacturing plants, and industrial structures built to withstand demanding
-                        operations.</p>
-                    <a href="services.html" class="service-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <h3>Renovation & Remodeling</h3>
-                    <p>Transform your existing space with our expert renovation services that breathe new life into any
-                        structure.</p>
-                    <a href="services.html" class="service-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-drafting-compass"></i>
-                    </div>
-                    <h3>Architecture & Design</h3>
-                    <p>Innovative architectural designs that blend aesthetics with functionality for your dream project.
-                    </p>
-                    <a href="services.html" class="service-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-road"></i>
-                    </div>
-                    <h3>Infrastructure Development</h3>
-                    <p>Roads, bridges, and public infrastructure projects built with durability and safety in mind.</p>
-                    <a href="services.html" class="service-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
+                
+                <div class="text-center mt-12">
+                    <a href="services.html" class="btn btn-outline">Explore All Services</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Preview Section -->
-    <section class="section" id="about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-images">
-                    <div class="about-image-main"></div>
-                    <div class="about-image-secondary"></div>
-                    <div class="about-experience-badge">
-                        <div class="number">25+</div>
-                        <div class="text">Years of<br>Excellence</div>
-                    </div>
+        <!-- Featured Projects Section -->
+        <section class="section section-gray">
+            <div class="container">
+                <div class="section-header centered">
+                    <span class="eyebrow">Our Work</span>
+                    <h2>Featured Projects</h2>
+                    <p>Landmark projects that demonstrate our capability, scale, and commitment to excellence.</p>
                 </div>
-
-                <div class="about-content">
-                    <span class="section-label">About Us</span>
-                    <h2 class="section-title">Building Excellence Since 1999</h2>
-                    <p class="about-description">
-                        BuildPro Construction has been at the forefront of the construction industry for over two
-                        decades. We combine traditional craftsmanship with modern innovation to deliver exceptional
-                        results that stand the test of time.
-                    </p>
-                    <p class="about-description">
-                        Our team of skilled professionals is committed to turning your vision into reality, whether it's
-                        a cozy family home, a modern office complex, or a large-scale industrial facility.
-                    </p>
-
-                    <div class="about-features">
-                        <div class="about-feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Licensed & Insured</span>
+                
+                <div class="grid grid-3">
+                    <article class="project-card" data-category="infrastructure">
+                        <div class="project-card-image" style="background: linear-gradient(135deg, #1B3A5F 0%, #2a5a8f 100%); display: flex; align-items: center; justify-content: center;">
+                            <span style="font-size: 4rem;">🚇</span>
                         </div>
-                        <div class="about-feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Certified Professionals</span>
-                        </div>
-                        <div class="about-feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Quality Materials</span>
-                        </div>
-                        <div class="about-feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>On-Time Delivery</span>
-                        </div>
-                    </div>
-
-                    <a href="about.html" class="btn btn-primary">
-                        Discover More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="section section-dark" id="projects">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">Our Portfolio</span>
-                <h2 class="section-title">Featured Projects</h2>
-                <p class="section-subtitle" style="color: var(--gray-light);">Explore our diverse portfolio of
-                    successful construction projects across various sectors.</p>
-            </div>
-
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image"></div>
-                    <div class="project-overlay">
-                        <span class="project-category">Residential</span>
-                        <h3 class="project-title">Luxury Villa Estate</h3>
-                        <a href="projects.html" class="project-link">
-                            View Project <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image"></div>
-                    <div class="project-overlay">
-                        <span class="project-category">Commercial</span>
-                        <h3 class="project-title">Corporate Tower</h3>
-                        <a href="projects.html" class="project-link">
-                            View Project <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image"></div>
-                    <div class="project-overlay">
-                        <span class="project-category">Industrial</span>
-                        <h3 class="project-title">Manufacturing Plant</h3>
-                        <a href="projects.html" class="project-link">
-                            View Project <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image"></div>
-                    <div class="project-overlay">
-                        <span class="project-category">Commercial</span>
-                        <h3 class="project-title">Shopping Complex</h3>
-                        <a href="projects.html" class="project-link">
-                            View Project <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image"></div>
-                    <div class="project-overlay">
-                        <span class="project-category">Residential</span>
-                        <h3 class="project-title">Modern Apartments</h3>
-                        <a href="projects.html" class="project-link">
-                            View Project <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image"></div>
-                    <div class="project-overlay">
-                        <span class="project-category">Infrastructure</span>
-                        <h3 class="project-title">City Bridge</h3>
-                        <a href="projects.html" class="project-link">
-                            View Project <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div style="text-align: center; margin-top: 50px;">
-                <a href="projects.html" class="btn btn-outline">
-                    View All Projects <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats-section section">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-project-diagram"></i>
-                    </div>
-                    <div class="stat-number" data-count="500">500+</div>
-                    <div class="stat-label">Projects Completed</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <div class="stat-number" data-count="350">350+</div>
-                    <div class="stat-label">Happy Clients</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <div class="stat-number" data-count="120">120+</div>
-                    <div class="stat-label">Expert Team</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-trophy"></i>
-                    </div>
-                    <div class="stat-number" data-count="45">45+</div>
-                    <div class="stat-label">Awards Won</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="section section-light">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">Testimonials</span>
-                <h2 class="section-title">What Our Clients Say</h2>
-                <p class="section-subtitle">Don't just take our word for it – hear from our satisfied clients about
-                    their experience working with us.</p>
-            </div>
-
-            <div class="testimonials-slider">
-                <div class="testimonial-card">
-                    <p class="testimonial-text">
-                        "BuildPro exceeded all our expectations. They completed our commercial complex ahead of schedule
-                        and within budget. Their attention to detail and commitment to quality is unmatched in the
-                        industry."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">👤</div>
-                        <div class="testimonial-info">
-                            <h4>Robert Anderson</h4>
-                            <p>CEO, Anderson Enterprises</p>
-                            <div class="testimonial-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                        <div class="project-card-overlay">
+                            <div class="project-card-meta">
+                                <span class="project-card-tag">Infrastructure</span>
+                                <span class="project-card-tag">Singapore</span>
                             </div>
+                            <h3>Singapore Metro Line 4</h3>
+                            <p>12km underground rail extension with 8 stations</p>
+                            <span class="project-card-value">Contract Value: $1.2B</span>
                         </div>
+                    </article>
+                    
+                    <article class="project-card" data-category="industrial">
+                        <div class="project-card-image" style="background: linear-gradient(135deg, #374151 0%, #4B5563 100%); display: flex; align-items: center; justify-content: center;">
+                            <span style="font-size: 4rem;">🏗️</span>
+                        </div>
+                        <div class="project-card-overlay">
+                            <div class="project-card-meta">
+                                <span class="project-card-tag">Industrial</span>
+                                <span class="project-card-tag">Nevada, USA</span>
+                            </div>
+                            <h3>Quantum Data Center</h3>
+                            <p>500,000 sq ft hyperscale data center facility</p>
+                            <span class="project-card-value">Contract Value: $800M</span>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card" data-category="commercial">
+                        <div class="project-card-image" style="background: linear-gradient(135deg, #1B3A5F 0%, #C9A227 100%); display: flex; align-items: center; justify-content: center;">
+                            <span style="font-size: 4rem;">🏛️</span>
+                        </div>
+                        <div class="project-card-overlay">
+                            <div class="project-card-meta">
+                                <span class="project-card-tag">Government</span>
+                                <span class="project-card-tag">Washington D.C.</span>
+                            </div>
+                            <h3>Federal Courthouse Complex</h3>
+                            <p>3-building federal campus with LEED Platinum certification</p>
+                            <span class="project-card-value">Contract Value: $650M</span>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="text-center mt-12">
+                    <a href="projects.html" class="btn btn-outline">View All Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="section">
+            <div class="container">
+                <div class="grid grid-2" style="align-items: center; gap: var(--space-16);">
+                    <div>
+                        <span class="eyebrow">Why Apex</span>
+                        <h2>A Legacy of Excellence</h2>
+                        <p class="lead">For over 45 years, Apex Infrastructure Group has been the trusted partner for the world's most complex construction challenges.</p>
+                        <p>We combine deep technical expertise with an unwavering commitment to safety, quality, and sustainability. Our integrated approach—from feasibility to handover—ensures every project meets the highest standards of performance and value.</p>
+                        
+                        <div class="mt-8">
+                            <a href="about.html" class="btn btn-primary">Learn About Us</a>
+                        </div>
+                    </div>
+                    
+                    <div class="quote-block" style="margin: 0;">
+                        <blockquote>"We build more than structures—we build relationships, careers, and communities."</blockquote>
+                        <cite>— James Morrison, Chairman & CEO</cite>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section section">
-        <div class="container">
-            <div class="cta-content">
-                <h2 class="cta-title">Ready to Start Your Project?</h2>
-                <p class="cta-text">
-                    Let's bring your vision to life. Contact us today for a free consultation and project estimate.
-                </p>
-                <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-secondary">
-                        <i class="fas fa-envelope"></i> Contact Us
-                    </a>
-                    <a href="tel:+1234567890" class="btn btn-outline">
-                        <i class="fas fa-phone-alt"></i> +1 (234) 567-890
-                    </a>
+        <!-- Certifications Section -->
+        <section class="section section-gray">
+            <div class="container">
+                <div class="section-header centered">
+                    <span class="eyebrow">Compliance & Certifications</span>
+                    <h2>Industry-Leading Standards</h2>
+                </div>
+                
+                <div class="certifications">
+                    <div class="certification">
+                        <div class="certification-icon">🏆</div>
+                        <span>ISO 9001:2015</span>
+                    </div>
+                    <div class="certification">
+                        <div class="certification-icon">🌿</div>
+                        <span>ISO 14001</span>
+                    </div>
+                    <div class="certification">
+                        <div class="certification-icon">🛡️</div>
+                        <span>ISO 45001</span>
+                    </div>
+                    <div class="certification">
+                        <div class="certification-icon">🌱</div>
+                        <span>LEED Certified</span>
+                    </div>
+                    <div class="certification">
+                        <div class="certification-icon">⭐</div>
+                        <span>OSHA VPP Star</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section section-dark">
+            <div class="container text-center">
+                <h2>Ready to Build Something Exceptional?</h2>
+                <p style="max-width: 600px; margin: var(--space-6) auto var(--space-8);">Partner with a construction leader trusted by governments and Fortune 500 companies worldwide.</p>
+                <a href="contact.html" class="btn btn-primary btn-lg">Request a Consultation</a>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
-            <div class="footer-main">
+            <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="index.html" class="logo">
-                        <div class="logo-icon">
-                            <i class="fas fa-hard-hat"></i>
-                        </div>
-                        <span class="logo-text">Build<span>Pro</span></span>
+                        <span class="logo-icon">A</span>
+                        <span>APEX INFRASTRUCTURE</span>
                     </a>
-                    <p class="footer-description">
-                        Building excellence since 1999. We are committed to delivering quality construction services
-                        that exceed expectations and stand the test of time.
-                    </p>
-                    <div class="footer-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
+                    <p>Building tomorrow's infrastructure with excellence, safety, and sustainability.</p>
                 </div>
-
-                <div class="footer-column">
-                    <h4>Quick Links</h4>
+                
+                <div>
+                    <h4>Company</h4>
                     <ul class="footer-links">
-                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
-                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
-                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
-                        <li><a href="projects.html"><i class="fas fa-chevron-right"></i> Projects</a></li>
-                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="safety.html">Safety & ESG</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-
-                <div class="footer-column">
-                    <h4>Our Services</h4>
+                
+                <div>
+                    <h4>Services</h4>
                     <ul class="footer-links">
-                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Residential</a></li>
-                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Commercial</a></li>
-                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Industrial</a></li>
-                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Renovation</a></li>
-                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Infrastructure</a></li>
+                        <li><a href="services.html#commercial">Commercial Construction</a></li>
+                        <li><a href="services.html#infrastructure">Infrastructure & Civil</a></li>
+                        <li><a href="services.html#industrial">Industrial Projects</a></li>
+                        <li><a href="services.html#design-build">Design-Build</a></li>
+                        <li><a href="services.html#consulting">Project Management</a></li>
                     </ul>
                 </div>
-
-                <div class="footer-column">
-                    <h4>Contact Info</h4>
-                    <div class="footer-contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>
-                            <strong>Address</strong>
-                            123 Construction Ave, Building City, BC 12345
-                        </p>
-                    </div>
-                    <div class="footer-contact-item">
-                        <i class="fas fa-phone-alt"></i>
-                        <p>
-                            <strong>Phone</strong>
-                            +1 (234) 567-890
-                        </p>
-                    </div>
-                    <div class="footer-contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>
-                            <strong>Email</strong>
-                            info@buildpro.com
-                        </p>
-                    </div>
+                
+                <div class="footer-contact">
+                    <h4>Global Headquarters</h4>
+                    <p>1200 Energy Corridor<br>Houston, TX 77077</p>
+                    <p><a href="tel:+17135550100">+1 713 555 0100</a></p>
+                    <p><a href="mailto:info@apexinfra.com">info@apexinfra.com</a></p>
                 </div>
             </div>
-
+            
             <div class="footer-bottom">
-                <p class="footer-copyright">
-                    © 2024 BuildPro Construction. All Rights Reserved.
-                </p>
-                <div class="footer-bottom-links">
+                <p>&copy; 2026 Apex Infrastructure Group. All rights reserved.</p>
+                <div class="footer-legal">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="js/main.js" defer></script>
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
 </body>
-
 </html>

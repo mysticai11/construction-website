@@ -5,447 +5,319 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="BuildPro Construction Portfolio - Explore our residential, commercial, and industrial construction projects. See our work in action.">
-    <meta name="author" content="BuildPro Construction">
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#F97316">
+        content="Explore Apex Infrastructure Group's portfolio of 1,200+ projects across commercial, infrastructure, industrial, and government sectors.">
+    <title>Projects | Apex Infrastructure Group</title>
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://buildpro.com/projects">
-    <meta property="og:title" content="Our Projects | BuildPro Construction">
-    <meta property="og:description"
-        content="500+ completed projects across residential, commercial, and industrial sectors.">
-    <meta property="og:image" content="https://buildpro.com/assets/images/og-projects.jpg">
-
-    <title>Our Projects | BuildPro Construction</title>
-    <link rel="canonical" href="https://buildpro.com/projects">
-
-    <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Header -->
-    <header class="header scrolled" id="header">
+    <header class="header scrolled" role="banner">
         <div class="container">
-            <a href="index.html" class="logo">
-                <div class="logo-icon">
-                    <i class="fas fa-hard-hat"></i>
-                </div>
-                <span class="logo-text">Build<span>Pro</span></span>
-            </a>
+            <div class="header-inner">
+                <a href="index.html" class="logo" aria-label="Apex Infrastructure Group Home">
+                    <span class="logo-icon">A</span>
+                    <span>APEX INFRASTRUCTURE</span>
+                </a>
 
-            <nav class="nav">
-                <ul class="nav-links">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="services.html" class="nav-link">Services</a></li>
-                    <li><a href="projects.html" class="nav-link active">Projects</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
-                </ul>
-                <div class="nav-cta">
-                    <a href="contact.html" class="btn btn-primary">Get Quote</a>
-                </div>
-            </nav>
+                <nav class="nav" role="navigation" aria-label="Main navigation">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="projects.html" class="nav-link active">Projects</a>
+                    <a href="safety.html" class="nav-link">Safety & ESG</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
 
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+                <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </header>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu">
-        <button class="mobile-menu-close" id="mobileMenuClose">
-            <i class="fas fa-times"></i>
-        </button>
-        <ul class="mobile-nav-links">
-            <li><a href="index.html" class="mobile-nav-link">Home</a></li>
-            <li><a href="about.html" class="mobile-nav-link">About</a></li>
-            <li><a href="services.html" class="mobile-nav-link">Services</a></li>
-            <li><a href="projects.html" class="mobile-nav-link active">Projects</a></li>
-            <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
-        </ul>
-    </div>
-
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="page-header-bg-shape"></div>
-        <div class="page-header-content">
-            <h1 class="page-header-title">Our Projects</h1>
-            <div class="breadcrumb">
-                <a href="index.html">Home</a>
-                <span>/</span>
-                <span>Projects</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">Portfolio</span>
-                <h2 class="section-title">Our Completed Projects</h2>
-                <p class="section-subtitle">Explore our diverse portfolio showcasing excellence in construction across
-                    various sectors.</p>
-            </div>
-
-            <!-- Filter Buttons -->
-            <div class="projects-filter">
-                <button class="filter-btn active" data-filter="all">All Projects</button>
-                <button class="filter-btn" data-filter="residential">Residential</button>
-                <button class="filter-btn" data-filter="commercial">Commercial</button>
-                <button class="filter-btn" data-filter="industrial">Industrial</button>
-                <button class="filter-btn" data-filter="infrastructure">Infrastructure</button>
-            </div>
-
-            <!-- Projects Grid -->
-            <div class="projects-grid" id="projectsGrid">
-                <!-- Project 1 -->
-                <div class="project-card" data-category="residential">
-                    <div class="project-image" style="background: linear-gradient(135deg, #2D5A8A, #1E3A5F);">
-                        <span style="font-size: 4rem;">🏠</span>
-                    </div>
-                    <div class="project-overlay">
-                        <span class="project-category">Residential</span>
-                        <h3 class="project-title">Luxury Villa Estate</h3>
-                        <p style="color: var(--gray-light); margin-bottom: 15px;">A stunning 8,000 sq ft luxury villa
-                            with modern amenities and smart home features.</p>
-                        <a href="#" class="project-link">
-                            View Details <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card" data-category="commercial">
-                    <div class="project-image" style="background: linear-gradient(135deg, #1E3A5F, #0F172A);">
-                        <span style="font-size: 4rem;">🏢</span>
-                    </div>
-                    <div class="project-overlay">
-                        <span class="project-category">Commercial</span>
-                        <h3 class="project-title">Corporate Tower</h3>
-                        <p style="color: var(--gray-light); margin-bottom: 15px;">A 25-story corporate headquarters with
-                            state-of-the-art facilities.</p>
-                        <a href="#" class="project-link">
-                            View Details <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card" data-category="industrial">
-                    <div class="project-image" style="background: linear-gradient(135deg, #334155, #1E293B);">
-                        <span style="font-size: 4rem;">🏭</span>
-                    </div>
-                    <div class="project-overlay">
-                        <span class="project-category">Industrial</span>
-                        <h3 class="project-title">Manufacturing Plant</h3>
-                        <p style="color: var(--gray-light); margin-bottom: 15px;">A 150,000 sq ft manufacturing facility
-                            with advanced infrastructure.</p>
-                        <a href="#" class="project-link">
-                            View Details <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-card" data-category="commercial">
-                    <div class="project-image" style="background: linear-gradient(135deg, #2D5A8A, #0F2744);">
-                        <span style="font-size: 4rem;">🛒</span>
-                    </div>
-                    <div class="project-overlay">
-                        <span class="project-category">Commercial</span>
-                        <h3 class="project-title">Metro Shopping Mall</h3>
-                        <p style="color: var(--gray-light); margin-bottom: 15px;">A premier shopping destination with
-                            200+ retail spaces and entertainment zones.</p>
-                        <a href="#" class="project-link">
-                            View Details <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 5 -->
-                <div class="project-card" data-category="residential">
-                    <div class="project-image" style="background: linear-gradient(135deg, #1E3A5F, #2D5A8A);">
-                        <span style="font-size: 4rem;">🏘️</span>
-                    </div>
-                    <div class="project-overlay">
-                        <span class="project-category">Residential</span>
-                        <h3 class="project-title">Sunset Apartments</h3>
-                        <p style="color: var(--gray-light); margin-bottom: 15px;">A 12-story residential complex with
-                            120 modern apartments.</p>
-                        <a href="#" class="project-link">
-                            View Details <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 6 -->
-                <div class="project-card" data-category="infrastructure">
-                    <div class="project-image" style="background: linear-gradient(135deg, #0F172A, #1E3A5F);">
-                        <span style="font-size: 4rem;">🌉</span>
-                    </div>
-                    <div class="project-overlay">
-                        <span class="project-category">Infrastructure</span>
-                        <h3 class="project-title">City River Bridge</h3>
-                        <p style="color: var(--gray-light); margin-bottom: 15px;">A 500-meter cable-stayed bridge
-                            connecting two city districts.</p>
-                        <a href="#" class="project-link">
-                            View Details <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 7 -->
-                <div class="project-card" data-category="commercial">
-                    <div class="project-image" style="background: linear-gradient(135deg, #2D5A8A, #334155);">
-                        <span style="font-size: 4rem;">🏨</span>
-                    </div>
-                    <div class="project-overlay">
-                        <span class="project-category">Commercial</span>
-                        <h3 class="project-title">Grand Horizon Hotel</h3>
-                        <p style="color: var(--gray-light); margin-bottom: 15px;">A 5-star luxury hotel with 300 rooms
-                            and world-class amenities.</p>
-                        <a href="#" class="project-link">
-                            View Details <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 8 -->
-                <div class="project-card" data-category="industrial">
-                    <div class="project-image" style="background: linear-gradient(135deg, #1E293B, #0F172A);">
-                        <span style="font-size: 4rem;">📦</span>
-                    </div>
-                    <div class="project-overlay">
-                        <span class="project-category">Industrial</span>
-                        <h3 class="project-title">Logistics Hub</h3>
-                        <p style="color: var(--gray-light); margin-bottom: 15px;">A 200,000 sq ft distribution center
-                            with automated systems.</p>
-                        <a href="#" class="project-link">
-                            View Details <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 9 -->
-                <div class="project-card" data-category="residential">
-                    <div class="project-image" style="background: linear-gradient(135deg, #1E3A5F, #0F2744);">
-                        <span style="font-size: 4rem;">🏡</span>
-                    </div>
-                    <div class="project-overlay">
-                        <span class="project-category">Residential</span>
-                        <h3 class="project-title">Green Valley Homes</h3>
-                        <p style="color: var(--gray-light); margin-bottom: 15px;">An eco-friendly community of 50
-                            sustainable homes.</p>
-                        <a href="#" class="project-link">
-                            View Details <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 10 -->
-                <div class="project-card" data-category="infrastructure">
-                    <div class="project-image" style="background: linear-gradient(135deg, #334155, #0F172A);">
-                        <span style="font-size: 4rem;">🛣️</span>
-                    </div>
-                    <div class="project-overlay">
-                        <span class="project-category">Infrastructure</span>
-                        <h3 class="project-title">Highway Expansion</h3>
-                        <p style="color: var(--gray-light); margin-bottom: 15px;">A 25-km highway expansion project with
-                            modern safety features.</p>
-                        <a href="#" class="project-link">
-                            View Details <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 11 -->
-                <div class="project-card" data-category="commercial">
-                    <div class="project-image" style="background: linear-gradient(135deg, #0F2744, #2D5A8A);">
-                        <span style="font-size: 4rem;">🏥</span>
-                    </div>
-                    <div class="project-overlay">
-                        <span class="project-category">Commercial</span>
-                        <h3 class="project-title">Medical Center</h3>
-                        <p style="color: var(--gray-light); margin-bottom: 15px;">A state-of-the-art 500-bed medical
-                            facility with advanced equipment.</p>
-                        <a href="#" class="project-link">
-                            View Details <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 12 -->
-                <div class="project-card" data-category="industrial">
-                    <div class="project-image" style="background: linear-gradient(135deg, #1E3A5F, #334155);">
-                        <span style="font-size: 4rem;">⚡</span>
-                    </div>
-                    <div class="project-overlay">
-                        <span class="project-category">Industrial</span>
-                        <h3 class="project-title">Power Station</h3>
-                        <p style="color: var(--gray-light); margin-bottom: 15px;">A 500MW power generation facility
-                            serving the region.</p>
-                        <a href="#" class="project-link">
-                            View Details <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats-section section">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-project-diagram"></i>
-                    </div>
-                    <div class="stat-number">500+</div>
-                    <div class="stat-label">Projects Completed</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <div class="stat-number">2.5M</div>
-                    <div class="stat-label">Sq. Ft. Built</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <div class="stat-number">350+</div>
-                    <div class="stat-label">Happy Clients</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="stat-number">15</div>
-                    <div class="stat-label">Cities Served</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section section">
-        <div class="container">
-            <div class="cta-content">
-                <h2 class="cta-title">Have a Project in Mind?</h2>
-                <p class="cta-text">
-                    Let's add your project to our portfolio. Contact us to discuss your construction needs.
+    <main id="main-content">
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1>Our Work Speaks for Itself</h1>
+                <p>1,200+ projects delivered across 18 countries, representing over $50 billion in construction value.
                 </p>
-                <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-secondary">
-                        <i class="fas fa-envelope"></i> Start Your Project
-                    </a>
-                    <a href="services.html" class="btn btn-outline">
-                        <i class="fas fa-tools"></i> Our Services
-                    </a>
+            </div>
+        </section>
+
+        <!-- Projects Grid -->
+        <section class="section">
+            <div class="container">
+                <!-- Filter Tabs -->
+                <div class="filter-tabs" role="tablist" aria-label="Filter projects by category">
+                    <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All
+                        Projects</button>
+                    <button class="filter-tab" data-filter="infrastructure" role="tab"
+                        aria-selected="false">Infrastructure</button>
+                    <button class="filter-tab" data-filter="commercial" role="tab"
+                        aria-selected="false">Commercial</button>
+                    <button class="filter-tab" data-filter="industrial" role="tab"
+                        aria-selected="false">Industrial</button>
+                    <button class="filter-tab" data-filter="government" role="tab"
+                        aria-selected="false">Government</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="grid grid-3">
+                    <!-- Singapore Metro -->
+                    <article class="project-card" data-category="infrastructure">
+                        <div class="project-card-image"
+                            style="background: linear-gradient(135deg, #1B3A5F 0%, #2a5a8f 100%); display: flex; align-items: center; justify-content: center;">
+                            <span style="font-size: 4rem;">🚇</span>
+                        </div>
+                        <div class="project-card-overlay">
+                            <div class="project-card-meta">
+                                <span class="project-card-tag">Infrastructure</span>
+                                <span class="project-card-tag">2023</span>
+                            </div>
+                            <h3>Singapore Metro Line 4</h3>
+                            <p>12km underground rail extension • Singapore</p>
+                            <span class="project-card-value">Contract Value: $1.2B</span>
+                        </div>
+                    </article>
+
+                    <!-- Quantum Data Center -->
+                    <article class="project-card" data-category="industrial">
+                        <div class="project-card-image"
+                            style="background: linear-gradient(135deg, #374151 0%, #4B5563 100%); display: flex; align-items: center; justify-content: center;">
+                            <span style="font-size: 4rem;">🖥️</span>
+                        </div>
+                        <div class="project-card-overlay">
+                            <div class="project-card-meta">
+                                <span class="project-card-tag">Industrial</span>
+                                <span class="project-card-tag">2022</span>
+                            </div>
+                            <h3>Quantum Data Center</h3>
+                            <p>500,000 sq ft hyperscale facility • Nevada, USA</p>
+                            <span class="project-card-value">Contract Value: $800M</span>
+                        </div>
+                    </article>
+
+                    <!-- Abu Dhabi Tower -->
+                    <article class="project-card" data-category="commercial">
+                        <div class="project-card-image"
+                            style="background: linear-gradient(135deg, #C9A227 0%, #dbb94a 100%); display: flex; align-items: center; justify-content: center;">
+                            <span style="font-size: 4rem;">🏙️</span>
+                        </div>
+                        <div class="project-card-overlay">
+                            <div class="project-card-meta">
+                                <span class="project-card-tag">Commercial</span>
+                                <span class="project-card-tag">2021</span>
+                            </div>
+                            <h3>Abu Dhabi Financial Tower</h3>
+                            <p>62-story mixed-use tower • UAE</p>
+                            <span class="project-card-value">Contract Value: $950M</span>
+                        </div>
+                    </article>
+
+                    <!-- Federal Courthouse -->
+                    <article class="project-card" data-category="government">
+                        <div class="project-card-image"
+                            style="background: linear-gradient(135deg, #1B3A5F 0%, #C9A227 100%); display: flex; align-items: center; justify-content: center;">
+                            <span style="font-size: 4rem;">🏛️</span>
+                        </div>
+                        <div class="project-card-overlay">
+                            <div class="project-card-meta">
+                                <span class="project-card-tag">Government</span>
+                                <span class="project-card-tag">2020</span>
+                            </div>
+                            <h3>Denver Federal Complex</h3>
+                            <p>3-building federal campus • Colorado, USA</p>
+                            <span class="project-card-value">Contract Value: $650M</span>
+                        </div>
+                    </article>
+
+                    <!-- Rotterdam Port -->
+                    <article class="project-card" data-category="infrastructure">
+                        <div class="project-card-image"
+                            style="background: linear-gradient(135deg, #142d4a 0%, #1B3A5F 100%); display: flex; align-items: center; justify-content: center;">
+                            <span style="font-size: 4rem;">🚢</span>
+                        </div>
+                        <div class="project-card-overlay">
+                            <div class="project-card-meta">
+                                <span class="project-card-tag">Infrastructure</span>
+                                <span class="project-card-tag">2019</span>
+                            </div>
+                            <h3>Port of Rotterdam Expansion</h3>
+                            <p>40-hectare container terminal • Netherlands</p>
+                            <span class="project-card-value">Contract Value: $1.1B</span>
+                        </div>
+                    </article>
+
+                    <!-- Tesla Gigafactory -->
+                    <article class="project-card" data-category="industrial">
+                        <div class="project-card-image"
+                            style="background: linear-gradient(135deg, #374151 0%, #1B3A5F 100%); display: flex; align-items: center; justify-content: center;">
+                            <span style="font-size: 4rem;">🏭</span>
+                        </div>
+                        <div class="project-card-overlay">
+                            <div class="project-card-meta">
+                                <span class="project-card-tag">Industrial</span>
+                                <span class="project-card-tag">2022</span>
+                            </div>
+                            <h3>EV Manufacturing Facility</h3>
+                            <p>2.5M sq ft advanced manufacturing • Texas, USA</p>
+                            <span class="project-card-value">Contract Value: $1.4B</span>
+                        </div>
+                    </article>
+
+                    <!-- LNG Facility -->
+                    <article class="project-card" data-category="industrial">
+                        <div class="project-card-image"
+                            style="background: linear-gradient(135deg, #4B5563 0%, #374151 100%); display: flex; align-items: center; justify-content: center;">
+                            <span style="font-size: 4rem;">⛽</span>
+                        </div>
+                        <div class="project-card-overlay">
+                            <div class="project-card-meta">
+                                <span class="project-card-tag">Industrial</span>
+                                <span class="project-card-tag">2021</span>
+                            </div>
+                            <h3>LNG Processing Facility</h3>
+                            <p>12 MTPA liquefaction capacity • Qatar</p>
+                            <span class="project-card-value">Contract Value: $2.1B</span>
+                        </div>
+                    </article>
+
+                    <!-- Medical Center -->
+                    <article class="project-card" data-category="commercial">
+                        <div class="project-card-image"
+                            style="background: linear-gradient(135deg, #1B3A5F 0%, #2a5a8f 100%); display: flex; align-items: center; justify-content: center;">
+                            <span style="font-size: 4rem;">🏥</span>
+                        </div>
+                        <div class="project-card-overlay">
+                            <div class="project-card-meta">
+                                <span class="project-card-tag">Commercial</span>
+                                <span class="project-card-tag">2023</span>
+                            </div>
+                            <h3>Regional Medical Center</h3>
+                            <p>750-bed tertiary care hospital • Sydney, Australia</p>
+                            <span class="project-card-value">Contract Value: $720M</span>
+                        </div>
+                    </article>
+
+                    <!-- Airport Terminal -->
+                    <article class="project-card" data-category="infrastructure">
+                        <div class="project-card-image"
+                            style="background: linear-gradient(135deg, #C9A227 0%, #1B3A5F 100%); display: flex; align-items: center; justify-content: center;">
+                            <span style="font-size: 4rem;">✈️</span>
+                        </div>
+                        <div class="project-card-overlay">
+                            <div class="project-card-meta">
+                                <span class="project-card-tag">Infrastructure</span>
+                                <span class="project-card-tag">2020</span>
+                            </div>
+                            <h3>International Airport Terminal</h3>
+                            <p>45M passenger capacity terminal • Mumbai, India</p>
+                            <span class="project-card-value">Contract Value: $890M</span>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Project Stats -->
+        <section class="section section-dark">
+            <div class="container">
+                <div class="metrics" style="grid-template-columns: repeat(4, 1fr);">
+                    <div class="metric">
+                        <div class="metric-value">$50B+</div>
+                        <div class="metric-label">Total Project Value</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value">1,200+</div>
+                        <div class="metric-label">Projects Completed</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value">18</div>
+                        <div class="metric-label">Countries</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value">98%</div>
+                        <div class="metric-label">On-Time Delivery</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section">
+            <div class="container text-center">
+                <h2>Ready to Start Your Project?</h2>
+                <p style="max-width: 600px; margin: var(--space-6) auto var(--space-8); color: var(--color-gray-600);">
+                    Our team is ready to deliver excellence on your next construction challenge.</p>
+                <a href="contact.html" class="btn btn-primary btn-lg">Request a Consultation</a>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
-            <div class="footer-main">
+            <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="index.html" class="logo">
-                        <div class="logo-icon">
-                            <i class="fas fa-hard-hat"></i>
-                        </div>
-                        <span class="logo-text">Build<span>Pro</span></span>
+                        <span class="logo-icon">A</span>
+                        <span>APEX INFRASTRUCTURE</span>
                     </a>
-                    <p class="footer-description">
-                        Building excellence since 1999. We are committed to delivering quality construction services
-                        that exceed expectations and stand the test of time.
-                    </p>
-                    <div class="footer-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
+                    <p>Building tomorrow's infrastructure with excellence, safety, and sustainability.</p>
                 </div>
 
-                <div class="footer-column">
-                    <h4>Quick Links</h4>
+                <div>
+                    <h4>Company</h4>
                     <ul class="footer-links">
-                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
-                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
-                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
-                        <li><a href="projects.html"><i class="fas fa-chevron-right"></i> Projects</a></li>
-                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="safety.html">Safety & ESG</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
 
-                <div class="footer-column">
-                    <h4>Our Services</h4>
+                <div>
+                    <h4>Services</h4>
                     <ul class="footer-links">
-                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Residential</a></li>
-                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Commercial</a></li>
-                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Industrial</a></li>
-                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Renovation</a></li>
-                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Infrastructure</a></li>
+                        <li><a href="services.html#commercial">Commercial Construction</a></li>
+                        <li><a href="services.html#infrastructure">Infrastructure & Civil</a></li>
+                        <li><a href="services.html#industrial">Industrial Projects</a></li>
+                        <li><a href="services.html#design-build">Design-Build</a></li>
+                        <li><a href="services.html#consulting">Project Management</a></li>
                     </ul>
                 </div>
 
-                <div class="footer-column">
-                    <h4>Contact Info</h4>
-                    <div class="footer-contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>
-                            <strong>Address</strong>
-                            123 Construction Ave, Building City, BC 12345
-                        </p>
-                    </div>
-                    <div class="footer-contact-item">
-                        <i class="fas fa-phone-alt"></i>
-                        <p>
-                            <strong>Phone</strong>
-                            +1 (234) 567-890
-                        </p>
-                    </div>
-                    <div class="footer-contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>
-                            <strong>Email</strong>
-                            info@buildpro.com
-                        </p>
-                    </div>
+                <div class="footer-contact">
+                    <h4>Global Headquarters</h4>
+                    <p>1200 Energy Corridor<br>Houston, TX 77077</p>
+                    <p><a href="tel:+17135550100">+1 713 555 0100</a></p>
+                    <p><a href="mailto:info@apexinfra.com">info@apexinfra.com</a></p>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p class="footer-copyright">
-                    © 2024 BuildPro Construction. All Rights Reserved.
-                </p>
-                <div class="footer-bottom-links">
+                <p>&copy; 2026 Apex Infrastructure Group. All rights reserved.</p>
+                <div class="footer-legal">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="js/main.js" defer></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

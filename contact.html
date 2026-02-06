@@ -5,373 +5,224 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Contact BuildPro Construction - Get in touch for a free consultation. We're here to help with all your construction needs.">
-    <meta name="author" content="BuildPro Construction">
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#F97316">
+        content="Contact Apex Infrastructure Group for commercial, infrastructure, and industrial construction inquiries. Global offices in Houston, New York, Dubai, and Singapore.">
+    <title>Contact Us | Apex Infrastructure Group</title>
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://buildpro.com/contact">
-    <meta property="og:title" content="Contact Us | BuildPro Construction">
-    <meta property="og:description"
-        content="Get a free consultation. Our team is ready to help with your construction project.">
-    <meta property="og:image" content="https://buildpro.com/assets/images/og-contact.jpg">
-
-    <title>Contact Us | BuildPro Construction</title>
-    <link rel="canonical" href="https://buildpro.com/contact">
-
-    <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Header -->
-    <header class="header scrolled" id="header">
+    <header class="header scrolled" role="banner">
         <div class="container">
-            <a href="index.html" class="logo">
-                <div class="logo-icon">
-                    <i class="fas fa-hard-hat"></i>
-                </div>
-                <span class="logo-text">Build<span>Pro</span></span>
-            </a>
+            <div class="header-inner">
+                <a href="index.html" class="logo" aria-label="Apex Infrastructure Group Home">
+                    <span class="logo-icon">A</span>
+                    <span>APEX INFRASTRUCTURE</span>
+                </a>
 
-            <nav class="nav">
-                <ul class="nav-links">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="services.html" class="nav-link">Services</a></li>
-                    <li><a href="projects.html" class="nav-link">Projects</a></li>
-                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
-                </ul>
-                <div class="nav-cta">
-                    <a href="contact.html" class="btn btn-primary">Get Quote</a>
-                </div>
-            </nav>
+                <nav class="nav" role="navigation" aria-label="Main navigation">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="projects.html" class="nav-link">Projects</a>
+                    <a href="safety.html" class="nav-link">Safety & ESG</a>
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </nav>
 
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+                <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </header>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu">
-        <button class="mobile-menu-close" id="mobileMenuClose">
-            <i class="fas fa-times"></i>
-        </button>
-        <ul class="mobile-nav-links">
-            <li><a href="index.html" class="mobile-nav-link">Home</a></li>
-            <li><a href="about.html" class="mobile-nav-link">About</a></li>
-            <li><a href="services.html" class="mobile-nav-link">Services</a></li>
-            <li><a href="projects.html" class="mobile-nav-link">Projects</a></li>
-            <li><a href="contact.html" class="mobile-nav-link active">Contact</a></li>
-        </ul>
-    </div>
-
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="page-header-bg-shape"></div>
-        <div class="page-header-content">
-            <h1 class="page-header-title">Contact Us</h1>
-            <div class="breadcrumb">
-                <a href="index.html">Home</a>
-                <span>/</span>
-                <span>Contact</span>
+    <main id="main-content">
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1>Let's Build Together</h1>
+                <p>Reach out to discuss your next project. Our team is ready to deliver excellence.</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">Get In Touch</span>
-                <h2 class="section-title">Let's Discuss Your Project</h2>
-                <p class="section-subtitle">Have a project in mind? We'd love to hear from you. Reach out and let's
-                    start building something great together.</p>
-            </div>
+        <!-- Contact Section -->
+        <section class="section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper">
+                        <h2 style="margin-bottom: var(--space-6);">Send Us a Message</h2>
+                        <form class="contact-form" id="contact-form" novalidate>
+                            <div class="grid grid-2" style="gap: var(--space-4);">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Full Name *</label>
+                                    <input type="text" id="name" name="name" class="form-input" required
+                                        autocomplete="name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="company" class="form-label">Company / Organization</label>
+                                    <input type="text" id="company" name="company" class="form-input"
+                                        autocomplete="organization">
+                                </div>
+                            </div>
 
-            <div class="contact-grid">
-                <!-- Contact Info -->
-                <div class="contact-info-cards">
-                    <div class="contact-info-card">
-                        <div class="contact-info-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-info-content">
-                            <h4>Our Office</h4>
-                            <p>123 Construction Avenue<br>Building City, BC 12345<br>United States</p>
-                        </div>
+                            <div class="grid grid-2" style="gap: var(--space-4);">
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email Address *</label>
+                                    <input type="email" id="email" name="email" class="form-input" required
+                                        autocomplete="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" class="form-input" autocomplete="tel">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="project-type" class="form-label">Project Type *</label>
+                                <select id="project-type" name="project-type" class="form-select" required>
+                                    <option value="">Select a project type</option>
+                                    <option value="commercial">Commercial Construction</option>
+                                    <option value="infrastructure">Infrastructure & Civil</option>
+                                    <option value="industrial">Industrial Projects</option>
+                                    <option value="government">Government / Public Sector</option>
+                                    <option value="design-build">Design-Build Services</option>
+                                    <option value="consulting">Project Management / Consulting</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea id="message" name="message" class="form-textarea" required
+                                    placeholder="Tell us about your project requirements, timeline, and any specific questions."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Submit
+                                Inquiry</button>
+                        </form>
                     </div>
 
-                    <div class="contact-info-card">
-                        <div class="contact-info-icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <div class="contact-info-content">
-                            <h4>Phone Numbers</h4>
-                            <p>Main: +1 (234) 567-890<br>Toll Free: 1-800-BUILDPRO<br>Fax: +1 (234) 567-891</p>
-                        </div>
-                    </div>
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <h3>Global Offices</h3>
 
-                    <div class="contact-info-card">
-                        <div class="contact-info-icon">
-                            <i class="fas fa-envelope"></i>
+                        <div class="office-card">
+                            <h4>Global Headquarters</h4>
+                            <p>1200 Energy Corridor<br>Houston, TX 77077, USA</p>
+                            <p><a href="tel:+17135550100">+1 713 555 0100</a></p>
                         </div>
-                        <div class="contact-info-content">
-                            <h4>Email Us</h4>
-                            <p>General: info@buildpro.com<br>Sales: sales@buildpro.com<br>Support: support@buildpro.com
+
+                        <div class="office-card">
+                            <h4>East Coast Office</h4>
+                            <p>450 Park Avenue<br>New York, NY 10022, USA</p>
+                            <p><a href="tel:+12125550150">+1 212 555 0150</a></p>
+                        </div>
+
+                        <div class="office-card">
+                            <h4>Middle East</h4>
+                            <p>Business Bay, Tower 3<br>Dubai, UAE</p>
+                            <p><a href="tel:+97145550200">+971 4 555 0200</a></p>
+                        </div>
+
+                        <div class="office-card">
+                            <h4>Asia Pacific</h4>
+                            <p>One Raffles Place, Tower 2<br>Singapore 048616</p>
+                            <p><a href="tel:+6565550300">+65 6555 0300</a></p>
+                        </div>
+
+                        <!-- Procurement CTA -->
+                        <div class="procurement-cta">
+                            <h4>Vendor & Procurement</h4>
+                            <p>For subcontractor registration and procurement inquiries:</p>
+                            <a href="mailto:procurement@apexinfra.com">procurement@apexinfra.com</a>
+                        </div>
+
+                        <!-- General Email -->
+                        <div
+                            style="margin-top: var(--space-6); padding: var(--space-4); background-color: var(--color-gray-50); border-radius: var(--radius-md);">
+                            <p style="font-size: var(--font-size-sm); color: var(--color-gray-600); margin: 0;">
+                                <strong>General Inquiries:</strong><br>
+                                <a href="mailto:info@apexinfra.com">info@apexinfra.com</a>
                             </p>
                         </div>
                     </div>
-
-                    <div class="contact-info-card">
-                        <div class="contact-info-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="contact-info-content">
-                            <h4>Working Hours</h4>
-                            <p>Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 2:00 PM<br>Sunday: Closed</p>
-                        </div>
-                    </div>
                 </div>
 
-                <!-- Contact Form -->
-                <div class="contact-form-wrapper">
-                    <h3>Send Us a Message</h3>
-                    <form id="contactForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="firstName">First Name *</label>
-                                <input type="text" id="firstName" name="firstName" placeholder="John" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="lastName">Last Name *</label>
-                                <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="email">Email Address *</label>
-                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" name="phone" placeholder="+1 (234) 567-890">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="service">Service Interested In</label>
-                            <select id="service" name="service">
-                                <option value="">Select a Service</option>
-                                <option value="residential">Residential Construction</option>
-                                <option value="commercial">Commercial Projects</option>
-                                <option value="industrial">Industrial Facilities</option>
-                                <option value="renovation">Renovation & Remodeling</option>
-                                <option value="architecture">Architecture & Design</option>
-                                <option value="infrastructure">Infrastructure Development</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="budget">Estimated Budget</label>
-                            <select id="budget" name="budget">
-                                <option value="">Select Budget Range</option>
-                                <option value="under-50k">Under $50,000</option>
-                                <option value="50k-100k">$50,000 - $100,000</option>
-                                <option value="100k-250k">$100,000 - $250,000</option>
-                                <option value="250k-500k">$250,000 - $500,000</option>
-                                <option value="500k-1m">$500,000 - $1,000,000</option>
-                                <option value="over-1m">Over $1,000,000</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Project Details *</label>
-                            <textarea id="message" name="message"
-                                placeholder="Tell us about your project, timeline, and any specific requirements..."
-                                required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">
-                            <i class="fas fa-paper-plane"></i> Send Message
-                        </button>
-                    </form>
+                <!-- Map -->
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.2073258736286!2d-95.5621!3d29.7786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDQ2JzQzLjAiTiA5NcKwMzMnNDMuNiJX!5e0!3m2!1sen!2sus!4v1234567890123"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        title="Apex Infrastructure Group Headquarters Location">
+                    </iframe>
                 </div>
             </div>
-
-            <!-- Map Placeholder -->
-            <div class="map-placeholder">
-                <div style="text-align: center; color: var(--gray-light);">
-                    <i class="fas fa-map-marked-alt" style="font-size: 4rem; margin-bottom: 15px; display: block;"></i>
-                    <p style="font-size: 1.2rem;">Interactive Map Coming Soon</p>
-                    <p>123 Construction Avenue, Building City, BC 12345</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Additional Contact Info -->
-    <section class="section section-light">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">Connect With Us</span>
-                <h2 class="section-title">Other Ways to Reach Us</h2>
-            </div>
-
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-headset"></i>
-                    </div>
-                    <h3>24/7 Support</h3>
-                    <p>Our support team is available around the clock to assist with urgent matters and emergencies.</p>
-                    <a href="tel:+18001234567" class="service-link">
-                        1-800-BUILDPRO <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-video"></i>
-                    </div>
-                    <h3>Virtual Consultation</h3>
-                    <p>Can't visit us in person? Schedule a virtual meeting with our project consultants.</p>
-                    <a href="#" class="service-link">
-                        Book Meeting <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fab fa-whatsapp"></i>
-                    </div>
-                    <h3>WhatsApp</h3>
-                    <p>Chat with us directly on WhatsApp for quick questions and project updates.</p>
-                    <a href="#" class="service-link">
-                        Start Chat <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section section">
-        <div class="container">
-            <div class="cta-content">
-                <h2 class="cta-title">Ready to Get Started?</h2>
-                <p class="cta-text">
-                    Take the first step towards your dream project. Our team is ready to help you every step of the way.
-                </p>
-                <div class="cta-buttons">
-                    <a href="tel:+1234567890" class="btn btn-secondary">
-                        <i class="fas fa-phone-alt"></i> Call Now
-                    </a>
-                    <a href="projects.html" class="btn btn-outline">
-                        <i class="fas fa-eye"></i> View Our Work
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
-            <div class="footer-main">
+            <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="index.html" class="logo">
-                        <div class="logo-icon">
-                            <i class="fas fa-hard-hat"></i>
-                        </div>
-                        <span class="logo-text">Build<span>Pro</span></span>
+                        <span class="logo-icon">A</span>
+                        <span>APEX INFRASTRUCTURE</span>
                     </a>
-                    <p class="footer-description">
-                        Building excellence since 1999. We are committed to delivering quality construction services
-                        that exceed expectations and stand the test of time.
-                    </p>
-                    <div class="footer-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
+                    <p>Building tomorrow's infrastructure with excellence, safety, and sustainability.</p>
                 </div>
 
-                <div class="footer-column">
-                    <h4>Quick Links</h4>
+                <div>
+                    <h4>Company</h4>
                     <ul class="footer-links">
-                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
-                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
-                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
-                        <li><a href="projects.html"><i class="fas fa-chevron-right"></i> Projects</a></li>
-                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="safety.html">Safety & ESG</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
 
-                <div class="footer-column">
-                    <h4>Our Services</h4>
+                <div>
+                    <h4>Services</h4>
                     <ul class="footer-links">
-                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Residential</a></li>
-                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Commercial</a></li>
-                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Industrial</a></li>
-                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Renovation</a></li>
-                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Infrastructure</a></li>
+                        <li><a href="services.html#commercial">Commercial Construction</a></li>
+                        <li><a href="services.html#infrastructure">Infrastructure & Civil</a></li>
+                        <li><a href="services.html#industrial">Industrial Projects</a></li>
+                        <li><a href="services.html#design-build">Design-Build</a></li>
+                        <li><a href="services.html#consulting">Project Management</a></li>
                     </ul>
                 </div>
 
-                <div class="footer-column">
-                    <h4>Contact Info</h4>
-                    <div class="footer-contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>
-                            <strong>Address</strong>
-                            123 Construction Ave, Building City, BC 12345
-                        </p>
-                    </div>
-                    <div class="footer-contact-item">
-                        <i class="fas fa-phone-alt"></i>
-                        <p>
-                            <strong>Phone</strong>
-                            +1 (234) 567-890
-                        </p>
-                    </div>
-                    <div class="footer-contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>
-                            <strong>Email</strong>
-                            info@buildpro.com
-                        </p>
-                    </div>
+                <div class="footer-contact">
+                    <h4>Global Headquarters</h4>
+                    <p>1200 Energy Corridor<br>Houston, TX 77077</p>
+                    <p><a href="tel:+17135550100">+1 713 555 0100</a></p>
+                    <p><a href="mailto:info@apexinfra.com">info@apexinfra.com</a></p>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p class="footer-copyright">
-                    © 2024 BuildPro Construction. All Rights Reserved.
-                </p>
-                <div class="footer-bottom-links">
+                <p>&copy; 2026 Apex Infrastructure Group. All rights reserved.</p>
+                <div class="footer-legal">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="js/main.js" defer></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
