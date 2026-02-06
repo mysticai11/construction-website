@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Project portfolio from Apex Infrastructure Group. Commercial and industrial construction projects across Ohio, Indiana, and Kentucky.">
+        content="Project portfolio from Apex Infrastructure Group. $2.4B in completed commercial and industrial construction.">
     <title>Projects | Apex Infrastructure Group</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -18,7 +20,7 @@
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- Header -->
-    <header class="header scrolled" role="banner">
+    <header class="header" role="banner">
         <div class="container">
             <div class="header-inner">
                 <a href="index.html" class="logo">APEX INFRASTRUCTURE</a>
@@ -48,141 +50,137 @@
         <!-- Page Hero -->
         <section class="page-hero">
             <div class="container">
-                <h1>Project Portfolio</h1>
-                <p>200+ projects completed across Ohio, Indiana, and Kentucky since 2008.</p>
+                <span class="label">Portfolio</span>
+                <h1>Selected Projects</h1>
+                <p>$2.4 billion in completed infrastructure across commercial, industrial, and government sectors.</p>
             </div>
         </section>
 
-        <!-- Filter & Projects -->
-        <section class="section">
+        <!-- Filter -->
+        <section class="section" style="padding-bottom: 0;">
             <div class="container">
                 <div class="filter-tabs" role="tablist">
                     <button class="filter-tab active" data-filter="all" role="tab">All Projects</button>
-                    <button class="filter-tab" data-filter="commercial" role="tab">Commercial</button>
                     <button class="filter-tab" data-filter="industrial" role="tab">Industrial</button>
-                    <button class="filter-tab" data-filter="retail" role="tab">Retail</button>
-                    <button class="filter-tab" data-filter="renovation" role="tab">Renovation</button>
-                </div>
-
-                <div class="grid grid-3">
-                    <article class="project-card" data-category="commercial">
-                        <div class="project-card-image" style="background-color: var(--navy);"></div>
-                        <div class="project-card-overlay">
-                            <span class="project-card-tag">Commercial</span>
-                            <h3>Riverfront Office Complex</h3>
-                            <p>45,000 sq ft Class A Office — Columbus, OH</p>
-                        </div>
-                    </article>
-
-                    <article class="project-card" data-category="industrial">
-                        <div class="project-card-image" style="background-color: var(--navy-dark);"></div>
-                        <div class="project-card-overlay">
-                            <span class="project-card-tag">Industrial</span>
-                            <h3>Metro Distribution Center</h3>
-                            <p>120,000 sq ft Warehouse — Indianapolis, IN</p>
-                        </div>
-                    </article>
-
-                    <article class="project-card" data-category="retail">
-                        <div class="project-card-image" style="background-color: var(--navy-light);"></div>
-                        <div class="project-card-overlay">
-                            <span class="project-card-tag">Retail</span>
-                            <h3>Oakwood Shopping Center</h3>
-                            <p>65,000 sq ft Retail Complex — Cincinnati, OH</p>
-                        </div>
-                    </article>
-
-                    <article class="project-card" data-category="industrial">
-                        <div class="project-card-image" style="background-color: var(--navy);"></div>
-                        <div class="project-card-overlay">
-                            <span class="project-card-tag">Industrial</span>
-                            <h3>Midwest Logistics Expansion</h3>
-                            <p>35,000 sq ft Warehouse Addition — Dayton, OH</p>
-                        </div>
-                    </article>
-
-                    <article class="project-card" data-category="commercial">
-                        <div class="project-card-image" style="background-color: var(--navy-dark);"></div>
-                        <div class="project-card-overlay">
-                            <span class="project-card-tag">Commercial</span>
-                            <h3>Westside Medical Center</h3>
-                            <p>28,000 sq ft Medical Office — Columbus, OH</p>
-                        </div>
-                    </article>
-
-                    <article class="project-card" data-category="renovation">
-                        <div class="project-card-image" style="background-color: var(--navy-light);"></div>
-                        <div class="project-card-overlay">
-                            <span class="project-card-tag">Renovation</span>
-                            <h3>Historic Bank Building</h3>
-                            <p>12,000 sq ft Renovation — Lexington, KY</p>
-                        </div>
-                    </article>
-
-                    <article class="project-card" data-category="retail">
-                        <div class="project-card-image" style="background-color: var(--navy);"></div>
-                        <div class="project-card-overlay">
-                            <span class="project-card-tag">Retail</span>
-                            <h3>Brewery & Restaurant</h3>
-                            <p>8,500 sq ft Food Service — Columbus, OH</p>
-                        </div>
-                    </article>
-
-                    <article class="project-card" data-category="industrial">
-                        <div class="project-card-image" style="background-color: var(--navy-dark);"></div>
-                        <div class="project-card-overlay">
-                            <span class="project-card-tag">Industrial</span>
-                            <h3>Precision Parts Facility</h3>
-                            <p>55,000 sq ft Manufacturing — Fort Wayne, IN</p>
-                        </div>
-                    </article>
-
-                    <article class="project-card" data-category="commercial">
-                        <div class="project-card-image" style="background-color: var(--navy-light);"></div>
-                        <div class="project-card-overlay">
-                            <span class="project-card-tag">Commercial</span>
-                            <h3>Community Credit Union</h3>
-                            <p>6,200 sq ft Branch — Dublin, OH</p>
-                        </div>
-                    </article>
+                    <button class="filter-tab" data-filter="commercial" role="tab">Commercial</button>
+                    <button class="filter-tab" data-filter="government" role="tab">Government</button>
                 </div>
             </div>
         </section>
 
-        <!-- Metrics -->
-        <section class="section section-dark">
-            <div class="container">
-                <div class="metrics" style="border-color: rgba(255,255,255,0.1);">
-                    <div class="metric">
-                        <div class="metric-value">200+</div>
-                        <div class="metric-label">Projects Completed</div>
+        <!-- Projects - Full Width Rows -->
+        <section class="section" style="padding: 0;">
+            <div class="project-row" data-category="industrial">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <span class="project-category">Industrial</span>
+                    <h3>Midwest Regional Distribution Hub</h3>
+                    <div class="project-meta">
+                        <span>240,000 sq ft</span>
+                        <span>$18.5M</span>
+                        <span>Indianapolis, IN</span>
                     </div>
-                    <div class="metric">
-                        <div class="metric-value">$85M</div>
-                        <div class="metric-label">Total Contract Value</div>
+                </div>
+            </div>
+
+            <div class="project-row" data-category="commercial">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <span class="project-category">Commercial</span>
+                    <h3>Riverfront Corporate Campus</h3>
+                    <div class="project-meta">
+                        <span>85,000 sq ft</span>
+                        <span>$12.2M</span>
+                        <span>Columbus, OH</span>
                     </div>
-                    <div class="metric">
-                        <div class="metric-value">3</div>
-                        <div class="metric-label">States Served</div>
+                </div>
+            </div>
+
+            <div class="project-row" data-category="industrial">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <span class="project-category">Manufacturing</span>
+                    <h3>Advanced Materials Production Facility</h3>
+                    <div class="project-meta">
+                        <span>175,000 sq ft</span>
+                        <span>$24.8M</span>
+                        <span>Fort Wayne, IN</span>
                     </div>
-                    <div class="metric">
-                        <div class="metric-value">98%</div>
-                        <div class="metric-label">On-Time Delivery</div>
+                </div>
+            </div>
+
+            <div class="project-row" data-category="government">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <span class="project-category">Government</span>
+                    <h3>Municipal Services Complex</h3>
+                    <div class="project-meta">
+                        <span>65,000 sq ft</span>
+                        <span>$14.6M</span>
+                        <span>Dayton, OH</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-row" data-category="commercial">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <span class="project-category">Commercial</span>
+                    <h3>Regional Medical Office Building</h3>
+                    <div class="project-meta">
+                        <span>48,000 sq ft</span>
+                        <span>$8.9M</span>
+                        <span>Louisville, KY</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-row" data-category="industrial">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <span class="project-category">Industrial</span>
+                    <h3>Cold Storage Distribution Center</h3>
+                    <div class="project-meta">
+                        <span>120,000 sq ft</span>
+                        <span>$22.1M</span>
+                        <span>Cincinnati, OH</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CTA -->
-        <section class="section">
+        <!-- Metrics Strip -->
+        <div class="metrics-strip">
+            <div class="metrics-strip-item">
+                <div class="metrics-strip-value">$2.4B</div>
+                <div class="metrics-strip-label">Project Value</div>
+            </div>
+            <div class="metrics-strip-item">
+                <div class="metrics-strip-value">500+</div>
+                <div class="metrics-strip-label">Projects</div>
+            </div>
+            <div class="metrics-strip-item">
+                <div class="metrics-strip-value">98%</div>
+                <div class="metrics-strip-label">On-Time</div>
+            </div>
+            <div class="metrics-strip-item">
+                <div class="metrics-strip-value">94%</div>
+                <div class="metrics-strip-label">On-Budget</div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <section class="section section-light">
             <div class="container">
-                <div class="grid grid-2" style="gap: 4rem; align-items: center;">
+                <div class="grid grid-2" style="gap: 6rem; align-items: center;">
                     <div>
-                        <h2>Discuss Your Next Project</h2>
-                        <p style="margin-bottom: 0;">Contact us for a consultation and detailed project assessment.</p>
+                        <span class="label" style="color: var(--gold);">Your Project</span>
+                        <h2 style="margin-top: var(--space-4);">Ready to Build?</h2>
+                        <p style="margin-top: var(--space-4);">Contact our team for a consultation, detailed assessment,
+                            and transparent estimate.</p>
                     </div>
                     <div style="text-align: right;">
-                        <a href="contact.html" class="btn btn-primary btn-lg">Request Consultation</a>
+                        <a href="contact.html" class="btn btn-primary btn-lg btn-arrow">Request Consultation</a>
                     </div>
                 </div>
             </div>
@@ -195,12 +193,8 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="index.html" class="logo">APEX INFRASTRUCTURE</a>
-                    <p>Commercial and industrial construction serving Ohio, Indiana, and Kentucky since 2008.</p>
-                    <div class="footer-certifications">
-                        <span>Licensed</span>
-                        <span>Bonded</span>
-                        <span>Insured</span>
-                    </div>
+                    <p>Commercial and industrial construction for enterprises and government agencies across Ohio,
+                        Indiana, and Kentucky.</p>
                 </div>
 
                 <div>

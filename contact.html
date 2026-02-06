@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Contact Apex Infrastructure Group for commercial and industrial construction services in Ohio, Indiana, and Kentucky.">
+        content="Contact Apex Infrastructure Group. Serving commercial and industrial clients across Ohio, Indiana, and Kentucky.">
     <title>Contact | Apex Infrastructure Group</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -18,7 +20,7 @@
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- Header -->
-    <header class="header scrolled" role="banner">
+    <header class="header" role="banner">
         <div class="container">
             <div class="header-inner">
                 <a href="index.html" class="logo">APEX INFRASTRUCTURE</a>
@@ -48,20 +50,21 @@
         <!-- Page Hero -->
         <section class="page-hero">
             <div class="container">
+                <span class="label">Get in Touch</span>
                 <h1>Contact Us</h1>
                 <p>Discuss your project requirements with our team. We respond within one business day.</p>
             </div>
         </section>
 
-        <!-- Contact Form -->
+        <!-- Contact Section -->
         <section class="section">
             <div class="container">
                 <div class="contact-grid">
                     <div class="contact-form-wrapper">
-                        <h3 style="margin-bottom: 2rem;">Request a Consultation</h3>
+                        <h3 style="margin-bottom: var(--space-8);">Request Consultation</h3>
 
                         <form id="contact-form" novalidate>
-                            <div class="grid grid-2" style="gap: 1.5rem;">
+                            <div class="grid grid-2" style="gap: var(--space-5);">
                                 <div class="form-group">
                                     <label class="form-label" for="firstName">First Name *</label>
                                     <input type="text" id="firstName" name="firstName" class="form-input" required>
@@ -77,7 +80,7 @@
                                 <input type="text" id="company" name="company" class="form-input">
                             </div>
 
-                            <div class="grid grid-2" style="gap: 1.5rem;">
+                            <div class="grid grid-2" style="gap: var(--space-5);">
                                 <div class="form-group">
                                     <label class="form-label" for="email">Email *</label>
                                     <input type="email" id="email" name="email" class="form-input" required>
@@ -96,7 +99,20 @@
                                     <option value="industrial">Industrial Facility</option>
                                     <option value="renovation">Renovation / Expansion</option>
                                     <option value="tenant">Tenant Build-Out</option>
+                                    <option value="government">Government Project</option>
                                     <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="budget">Estimated Budget</label>
+                                <select id="budget" name="budget" class="form-select">
+                                    <option value="">Select budget range</option>
+                                    <option value="under-1m">Under $1M</option>
+                                    <option value="1m-5m">$1M – $5M</option>
+                                    <option value="5m-15m">$5M – $15M</option>
+                                    <option value="15m-50m">$15M – $50M</option>
+                                    <option value="over-50m">$50M+</option>
                                 </select>
                             </div>
 
@@ -114,46 +130,38 @@
                     <div class="contact-info">
                         <h3>Contact Information</h3>
 
-                        <div class="office-block">
+                        <div class="contact-block">
                             <h4>Headquarters</h4>
                             <p>1847 Industrial Parkway<br>Columbus, OH 43215</p>
                         </div>
 
-                        <div class="office-block">
+                        <div class="contact-block">
                             <h4>Phone</h4>
                             <p><a href="tel:+16145550120">(614) 555-0120</a></p>
                         </div>
 
-                        <div class="office-block">
+                        <div class="contact-block">
                             <h4>Email</h4>
                             <p><a href="mailto:info@apexinfra.com">info@apexinfra.com</a></p>
                         </div>
 
-                        <div class="office-block">
+                        <div class="contact-block">
                             <h4>Service Area</h4>
-                            <p>Ohio, Indiana, Kentucky</p>
+                            <p>Ohio · Indiana · Kentucky</p>
                         </div>
 
-                        <div class="office-block">
+                        <div class="contact-block">
                             <h4>Business Hours</h4>
                             <p>Monday – Friday: 7:00 AM – 5:00 PM<br>Saturday – Sunday: Closed</p>
                         </div>
 
-                        <div class="office-block"
-                            style="background-color: var(--gray-50); padding: 1.5rem; border-radius: 4px; margin-top: 2rem;">
+                        <div class="contact-block"
+                            style="margin-top: var(--space-8); padding: var(--space-6); background: var(--dark); border-left: 2px solid var(--gold);">
                             <h4>Subcontractor Inquiries</h4>
-                            <p style="margin-bottom: 0.5rem;">Interested in partnering with Apex?</p>
-                            <p style="margin: 0;"><a href="mailto:subs@apexinfra.com">subs@apexinfra.com</a></p>
+                            <p style="margin-bottom: var(--space-2);">Interested in partnering with Apex?</p>
+                            <p><a href="mailto:subs@apexinfra.com">subs@apexinfra.com</a></p>
                         </div>
                     </div>
-                </div>
-
-                <div class="map-container">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d195601.37740523865!2d-83.15959569548873!3d39.96118289568987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388f3f3c06c0e5%3A0x7f5f3d9e4c0a0a0a!2sColumbus%2C%20OH!5e0!3m2!1sen!2sus!4v1234567890123"
-                        width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade" title="Apex Infrastructure Group location">
-                    </iframe>
                 </div>
             </div>
         </section>
@@ -165,12 +173,8 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="index.html" class="logo">APEX INFRASTRUCTURE</a>
-                    <p>Commercial and industrial construction serving Ohio, Indiana, and Kentucky since 2008.</p>
-                    <div class="footer-certifications">
-                        <span>Licensed</span>
-                        <span>Bonded</span>
-                        <span>Insured</span>
-                    </div>
+                    <p>Commercial and industrial construction for enterprises and government agencies across Ohio,
+                        Indiana, and Kentucky.</p>
                 </div>
 
                 <div>
